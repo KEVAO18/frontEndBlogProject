@@ -109,17 +109,3 @@ input:focus{
     font-style: italic;
     text-decoration: .5px underline dashed;
 }
-
-.anim{
-    animation-name: active;
-    animation-duration: 2s;
-    width: 100%
-}
-@keyframes active{
-    from{
-        width: 0px;
-    }
-    to{
-        width: 100%;
-    }
-}
