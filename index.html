@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abriendo...</title>
+    <link rel="stylesheet" href="../assets/css/hw.css">
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/margin.css">
+    <link rel="stylesheet" href="../assets/css/navbar.css">
+    <link rel="stylesheet" href="../assets/css/padding.css">
+    <link rel="stylesheet" href="../assets/css/colores.css">
+    <link rel="stylesheet" href="../assets/css/anotherStyles.css">
+</head>
+<body>
+    <section class="py-5-r">
+        <article class="card center">
+            <h1 class="fs-4 pt-1-r pb-1-r f-open text-j color-blanco-2" id="par">Loaded</h1>
+        </article>
+    </section>
+    <script type="text/javascript">
+		setTimeout(function() {
+			document.getElementById('par').innerHTML = "Loaded.";
+		}, 500);
+		setTimeout(function() {
+			document.getElementById('par').innerHTML = "Loaded..";
+		}, 1000);
+		setTimeout(function() {
+			document.getElementById('par').innerHTML = "Loaded...";
+		}, 1500);
+		setTimeout(function() {
+		    var URLactual = window.location;
+			document.getElementById('par').innerHTML = "Listo";
+			window.location.href = 'public/index.html';
+		}, 2000);
+</script>
+</body>
+</html>

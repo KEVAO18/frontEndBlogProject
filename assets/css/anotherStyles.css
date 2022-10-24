@@ -1,0 +1,125 @@
+:root {
+    --negro-1: #4285f4 ;
+    --negro-2: #21252e;
+    --blanco-1: #ffffff;
+    --blanco-2: #dfe4ea;
+}
+
+@media screen and (min-width: 480px){
+    .favicon{
+        rotate: 0deg;
+        transition: 1s;
+        border-radius: 50px;
+        width: 15vw;
+        z-index: 1;
+    }
+
+    .favicon:hover{
+        rotate: 360deg;
+        transition: 1s;
+        border-radius: 100px;
+    }
+
+    .card{
+        width: 40vw;
+    }
+
+    .form-input{
+        width: 55vw;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .favicon{
+        rotate: 0deg;
+        transition: 1s;
+        border-radius: 20px;
+        width: 50vw;
+    }
+
+    .favicon:hover{
+        rotate: 360deg;
+        transition: 1s;
+        border-radius: 70px;
+    }
+    
+    .card{
+        width: 60vw;
+    }
+
+    .form-input{
+        width: 80vw;
+    }
+}
+
+.center{
+    display: block;
+    margin: auto;
+}
+
+.no-list-style{
+    list-style: none;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: var(--negro-1);
+    margin-top: 2rem;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.form-input{
+    background-color: var(--negro-1);
+    margin-top: 2rem;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+input{
+    border-radius: 10px;
+    border-width: 3px;
+    border-style: double;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+input:focus{
+    border-style: dashed;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 10px #21252e77;
+    transition: .5s;
+}
+
+.text-decoration-n{
+    text-decoration: none;
+}
+
+.tesis > span{
+    font-weight: 400;
+}
+
+.tesis{
+    font-style: italic;
+    text-decoration: .5px underline dashed;
+}
+
+.anim{
+    animation-name: active;
+    animation-duration: 2s;
+    width: 100%
+}
+@keyframes active{
+    from{
+        width: 0px;
+    }
+    to{
+        width: 100%;
+    }
+}
