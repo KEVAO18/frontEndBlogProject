@@ -109,3 +109,15 @@ input:focus{
     font-style: italic;
     text-decoration: .5px underline dashed;
 }
+
+body::-webkit-scrollbar{
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: var(--negro-1);
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: var(--negro-2);
+}
